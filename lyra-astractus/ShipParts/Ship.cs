@@ -1,4 +1,4 @@
-namespace ConsoleApp1.GeneralClasses;
+namespace DefaultNamespace;
 
 public class Ship
 {

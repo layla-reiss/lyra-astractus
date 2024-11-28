@@ -1,15 +1,15 @@
-namespace ConsoleApp1.Guard;
+namespace DefaultNamespace;
 
 public interface GuardConditions
 {
-    private int temp = 5;
+    private int temp = 50;
     
-    //make gravity class with physics methods for each which can be applied later at the FE
+    //TODO make gravity class with physics methods for each which can be applied later at the FE
     private string gravity = "earth";
 
-    //gas masks needed from smog
+    //TODO gas masks needed from smog
     private boolean breathableAir = false;
 
-    //demilitarised zone, eathlight fellowship controls weaponry
+    //TODO demilitarised zone, eathlight fellowship controls weaponry
     private boolean gunsProhibited = false;
 }

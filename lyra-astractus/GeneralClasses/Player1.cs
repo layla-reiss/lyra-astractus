@@ -1,17 +1,17 @@
-namespace ConsoleApp1.GeneralClasses;
+namespace DefaultNamespace;
 
 public class Player1
 {
-    internal int maxHealth;
-    internal int remainingHealth;
-    private quest[] questLog { get; private set; }; //TODO make quest class
-    private skill[] skillList { get; private set; }; //TODO make skill class
-    private posession[] inventory { get; private set; }; //TODO make posession class
+    internal int maxHealth { get; private set; }
+    internal int remainingHealth {get; private set;}
+    private Quest[] questLog { get; private set; } //TODO make quest class
+    private Skill[] skillList { get; private set; } //TODO make skill class
+    private Posession[] inventory { get; private set; } //TODO make posession class
  //TODO method for freezing
     //TODO method for suffocation
     //TODO method for overheating
     //TODO method for taking damage
-    public Player1(int maxHealth, int remainingHealth, quest[] questLog, skill[] skillList, posession[] inventory)
+    public Player1(int maxHealth, int remainingHealth, Quest[] questLog, Skill[] skillList, Posession[] inventory)
     {
         this.maxHealth = maxHealth;
         this.remainingHealth = remainingHealth;
@@ -19,6 +19,10 @@ public class Player1
         this.skillList = skillList;
         this.inventory = inventory;
     }
-    
+
+    public void takeDamage(int damage)
+    {
+        setRemainingHealth(this.remainingHealth - damage);
+    }
     
 }
